@@ -129,6 +129,16 @@ h3 { font-size: 1.4rem; margin-bottom: 6px; }
   .quote blockquote { font-size: 2.2rem; }
   
 }
+img.hero-image {
+  width: 100%;
+  max-width: 340px;
+  aspect-ratio: 4 / 5;
+  height: auto;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 20px;
+  margin: 0 auto;
+}
 @media (min-width: 768px) {
   .hero {
     display: grid;
@@ -141,15 +151,10 @@ h3 { font-size: 1.4rem; margin-bottom: 6px; }
     min-width: 0;
   }
 
-  img.hero-image {
-    width: 100%;
-    max-width: 288px;
-    max-height: 50vh;
-    height: auto;
-    aspect-ratio: 1 / 1;
-    object-fit: cover;
-    object-position: top;
+ img.hero-image {
+    max-width: 520px;
+    aspect-ratio: 4 / 3;
     justify-self: end;
-    border-radius: 20px
-   }
+    margin: 0;
+  }
   }
